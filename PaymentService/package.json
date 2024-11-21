@@ -1,0 +1,16 @@
+{
+    "name": "payment-service",
+    "version": "1.0.0",
+    "description": "Payment service for processing transactions in the microservices architecture.",
+    "main": "index.js",
+    "scripts": {
+      "start": "dotnet run",
+      "build": "dotnet publish -c Release",
+      "test": "dotnet test"
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  
