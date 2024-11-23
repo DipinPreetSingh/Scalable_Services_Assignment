@@ -193,6 +193,44 @@
       ],
       "UpstreamPathTemplate": "/order/{orderId}",
       "UpstreamHttpMethod": [ "Get" ]
+    },
+    //Shipping service
+
+    {
+      "DownstreamPathTemplate": "/api/shipping/options",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8081"
+        }
+      ],
+      "UpstreamPathTemplate": "/shipping/option",
+      "UpstreamHttpMethod": [ "Post", "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/shipping/create",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8081"
+        }
+      ],
+      "UpstreamPathTemplate": "/shipping/create",
+      "UpstreamHttpMethod": [ "Post", "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/shipping/track/{orderId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "8081"
+        }
+      ],
+      "UpstreamPathTemplate": "/shipping/track/{orderId}",
+      "UpstreamHttpMethod": [ "Post", "Get" ]
     }
   ]
 }
